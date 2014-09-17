@@ -2,6 +2,7 @@
 // Spetember 10, 2014
 // CSE02
 // hw03
+// print out the four digits afer the decimal place
 import java.util.Scanner;
 public class FourDigits {
     // main method
@@ -16,13 +17,16 @@ public class FourDigits {
         double x = myScanner.nextDouble();
         
         // calculations
-        int y = (int)x;
-        double newx = x-y;
-        double x10000 = (newx*10000);
+        int y = (int)x; // change to int
+        double newx = x-y; // get rid of numbers before decimal
+        double x10000 = (newx*10000); // change to non decimal
         double brandnewx = x10000 + .3;
-        int betterx = (int)brandnewx;
+        int betterx = (int)brandnewx; // change to int
         
         // individual values
+        // need to do individually to get 0's to appear
+        // %10 takes last number before the decimal
+        // divide to get number you want there
         int value1 = (int)(betterx/1000)%10;
         int value2 = (int)(betterx/100)%10;
         int value3= (int)(betterx/10)%10;

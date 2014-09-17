@@ -29,10 +29,10 @@ public class Bicycle {
         System.out.println("enter the number of seconds");
         seconds = scan.nextInt();
         // calculations
-        distanceInSeconds=counts*wheelDiameter*pi;
-        distance=distanceInSeconds/(inchesPerFoot*feetPerMile);
+        distanceInSeconds=counts*wheelDiameter*pi;  // distance in seconds
+        distance=distanceInSeconds/(inchesPerFoot*feetPerMile);  // distance in miles
         minutes=seconds/secondsPerMinute;
-        avgMilePerHour=distance/(minutes/minutesPerHour);
+        avgMilePerHour=distance/(minutes/minutesPerHour); 
         // restrict decimal places
         double distance100=(int)(distance*100);
         double distanceFinal=(distance100/100);

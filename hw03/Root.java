@@ -2,6 +2,8 @@
 // Spetember 10, 2014
 // CSE02
 // hw03
+// print out a guess for the cube root
+// show calculations for cubing your guess
 import java.util.Scanner;
 public class Root {
     // main method
@@ -23,13 +25,13 @@ public class Root {
         // calculations
         guess = x/3;
         guess2 = (guess*guess*guess+x)/(3*guess*guess);
-        guess3 = (2*guess2*guess2*guess2+x)/(3*guess2*guess2);
+        guess3 = (2*guess2*guess2*guess2+x)/(3*guess2*guess2); // guess gets more accurate each time
         guess4 = (2*guess3*guess3*guess3+x)/(3*guess3*guess3);
         cube = (guess4*guess4*guess4);
         
         // print results
-        System.out.println("The cube root is"+guess4+":");
-        System.out.println(guess4+"*"+guess4+"*"+guess4+"="+cube);
+        System.out.println("The cube root is "+guess4+":");
+        System.out.println(guess4+"*"+guess4+"*"+guess4+"="+cube); // print out calculations to cube your guess of cuberoot
         
     }
 }
