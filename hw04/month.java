@@ -1,6 +1,10 @@
 // Jennie-rose Barrella
 // September, 19,2014
 // CSE2
+// hw04
+// enter int for month
+// display month and days in month
+// be aware of leap year!
 
 import java.util.Scanner;
 public class month {
@@ -27,7 +31,7 @@ public class month {
         } // end of else if
        
         else if (month==2) {
-            System.out.print("Enter an int giving the year: ");
+            System.out.print("Enter an int giving the year: "); // figure out leap year
             
             if (myScanner.hasNextInt()) {
                 year = myScanner.nextInt();
@@ -35,18 +39,18 @@ public class month {
                 if (year % 4 == 0) { // if divisible by 4
                     if (year % 100 == 0) { // if divisible by 100
                         if (year % 400 == 0) // if divisible by 400
-                            System.out.println("The month has 29 days");
+                            System.out.println("The month has 29 days"); // leap year
                         else {
-                            System.out.println("The month has 28 days");
+                            System.out.println("The month has 28 days"); // not leap year
                         } // end else
                     } // end if  
                     else {
-                        System.out.println("The month has 29 days");
+                        System.out.println("The month has 29 days"); // leap year
                     } // end else
                 } // end of if
                
                 else {
-                    System.out.println("The month has 28 days");
+                    System.out.println("The month has 28 days"); // not leap year
                 } // end of else
             } // end of if 
         } // end of else if

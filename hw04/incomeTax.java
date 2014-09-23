@@ -1,6 +1,9 @@
 // Jennie-rose Barrella
 // September, 19,2014
 // CSE2
+// hw04
+// enter int for thousands of income
+// print income, tax percentage and tax on income
 
 import java.util.Scanner;
 public class incomeTax {

@@ -1,6 +1,10 @@
 // Jennie-rose Barrella
 // September, 19,2014
 // CSE2
+// hw04
+// enter int for number of seconds
+// display time in hours:minutes:seconds
+// be sure to include 0's so always 2 places in minutes and seconds
 
 import java.util.Scanner;
 public class timePadding {
@@ -14,12 +18,13 @@ public class timePadding {
         int seconds = myScanner.nextInt();
     
         int secondsDivide60 = seconds/60;
-        int secondsnew = seconds - (secondsDivide60*60);
+        int secondsnew = seconds - (secondsDivide60*60); // seconds
     
-        int hour = secondsDivide60/60;
+        int hour = secondsDivide60/60; // hours
     
-        int minute = secondsDivide60 - (60*hour);
+        int minute = secondsDivide60 - (60*hour); // minutes
         
+        // to display 0's
         if (minute<10 && secondsnew<10) {
             System.out.printf("The time is %d:0%d:0% \n", hour, minute, secondsnew);
         }
