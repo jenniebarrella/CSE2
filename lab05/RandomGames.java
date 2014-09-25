@@ -6,8 +6,6 @@
 // ask user to choose game
 // play game
 
-
-
 import java.util.Scanner;
 public class RandomGames {
     public static void main(String [ ] args) {
@@ -21,6 +19,10 @@ public class RandomGames {
         myScanner.hasNext();
         String choice = myScanner.next();
         
+        if (choice.length()>1) {
+            System.out.println("a single character expected");
+            return;
+        }
         
         switch (choice) {
             // roulette
