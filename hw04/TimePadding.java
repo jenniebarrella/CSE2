@@ -26,7 +26,7 @@ public class TimePadding {
         
         // to display 0's
         if (minute<10 && secondsnew<10) {
-            System.out.printf("The time is %d:0%d:0% \n", hour, minute, secondsnew);
+            System.out.printf("The time is %d:0%d:0%d \n", hour, minute, secondsnew);
         }
         else if (minute<10 && secondsnew>=10) {
             System.out.printf("The time is %d:0%d:%d \n", hour, minute, secondsnew);
