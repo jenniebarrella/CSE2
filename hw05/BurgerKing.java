@@ -2,6 +2,10 @@
 // September 24,2014
 // CSE2
 // hw05 Burger King
+// ask user if they want a burger, soda or fries
+// if burger what do they want on it
+// if soda what kind
+// if fries what size
 
 import java.util.Scanner;
 public class BurgerKing {
@@ -19,7 +23,7 @@ public class BurgerKing {
         myScanner.hasNext();
         String food = myScanner.next();
         
-        if (food.length()>1) {
+        if (food.length()>1) { // if user enters more than one letter
             System.out.println("a single character expected");
             return;
         }
@@ -34,13 +38,14 @@ public class BurgerKing {
                 System.out.println("Nothing (N or n)");
                 myScanner.hasNext();
                 String toppings = myScanner.next();
-                String toppingsName = "";
+                String toppingsName = ""; // empty string to later decalre what the topping name in
                 
-                if (toppings.length()>1) {
+                if (toppings.length()>1) { // if user enters more than one letter
                     System.out.println("a single character expected");
                     return;
                 }
                 
+                // burger toppings
                 switch (toppings) {
                     case("C"): case("c"):
                         toppingsName = "with cheese";
@@ -55,6 +60,7 @@ public class BurgerKing {
                         System.out.println("You did not enter an appropriate letter");
                         return;
                 }
+                // final print statement
                 System.out.println("You ordered a burger "+toppingsName);
                 return;
                 
@@ -67,13 +73,14 @@ public class BurgerKing {
                 System.out.println("Mountain Dew (M or m)");
                 myScanner.hasNext();
                 String soda = myScanner.next();
-                String sodaName = "";
+                String sodaName = ""; // empty string to later decalre what soda name is
                 
-                if (soda.length()>1) {
+                if (soda.length()>1) { // if user enters more than one letter
                     System.out.println("a single character expected");
                     return;
                 }
                 
+                // soda options
                 switch (soda) {
                     case("P"): case("p"):
                         sodaName = "Pepsi";
@@ -91,6 +98,7 @@ public class BurgerKing {
                         System.out.println("You did not enter an appropriate letter");
                         return;
                 }
+                // final print statement
                 System.out.println("You ordered a "+sodaName);
                 return;
             
@@ -99,13 +107,14 @@ public class BurgerKing {
                 System.out.println("Do you want a small (S or s) or large (L or l) order of fries?");
                 myScanner.hasNext();
                 String fries = myScanner.next();
-                String frySize = "";
+                String frySize = ""; // empty string to later decalre what fry size is
                 
-                if (fries.length()>1) {
+                if (fries.length()>1) { // if user enters more than one letter
                     System.out.println("a single character expected");
                     return;
                 }
-        
+                
+                // fries options
                 switch (fries) {
                     case("S"): case("s"):
                         frySize = "small";
@@ -117,6 +126,7 @@ public class BurgerKing {
                         System.out.println("You did not enter an appropriate letter");
                         return;
                 }
+                // final print statement
                 System.out.println("You ordered a "+frySize+" fries");
                 return;
                 
