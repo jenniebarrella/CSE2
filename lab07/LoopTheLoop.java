@@ -22,7 +22,7 @@ public class LoopTheLoop {
         
         System.out.println("loop 3:"); // loop 3
         
-        while (true) { // large infinte true loop
+        while (true) { // large infinite true loop
         
             while ((nStars < 1) || (nStars > 15) ) { // starts here and repeats if enter number outside range
                 System.out.print("Enter an int between 1 and 15: "); // prompts input
