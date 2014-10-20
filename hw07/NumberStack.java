@@ -2,6 +2,18 @@
 // October 18,2014
 // CSE2
 // hw07 NumberStack
+// have user enter an int between 1 and 9 and have the program print
+// the numbers between 1 and the input like this:
+//   1
+//   -
+//  222
+//  222
+//  ---
+// 33333
+// 33333
+// 33333
+// -----
+// do this using only for loops, then only while, then only do-while
 
 import java.util.Scanner;
 public class NumberStack {
